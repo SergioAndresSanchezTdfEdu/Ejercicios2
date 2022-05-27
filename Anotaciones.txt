@@ -1,0 +1,28 @@
+Si esto:
+
+for (let i: number = 0; i < Tamanio; i++)
+
+lo cambio por esto:
+
+let i: number = 0
+...
+for (; i < Tamanio; )
+...
+i++
+
+Funciona.
+
+---------
+
+Extensiones VISUAL STUDIO CODE
+
+php-formatter
+php snipper
+eslint
+live server
+
+---------
+
+Importar librerias
+
+<script scr="archivo.ts"></script>
