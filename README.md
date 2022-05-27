@@ -1,2 +1,2 @@
-# Ejercicios2
+# Ejercicios
 Created with CodeSandbox
