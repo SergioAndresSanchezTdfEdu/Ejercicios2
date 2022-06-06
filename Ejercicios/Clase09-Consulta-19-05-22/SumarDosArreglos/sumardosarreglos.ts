@@ -3,9 +3,10 @@ document.getElementById("app").innerHTML = `
 `;
 // JOSE: llamar a las variables y funciones con minusculas como primer palabra
 // SERGIO: ok.
-let arreglo1: number[] = new Array(6);
-let arreglo2: number[] = new Array(6);
-let sumaArreglo1y2: number[] = new Array(6);
+let tamanio = Number(prompt(`Indique el tamaño de los vectores`));
+let arreglo1: number[] = new Array(tamanio);
+let arreglo2: number[] = new Array(tamanio);
+let sumaArreglo1y2: number[] = new Array(tamanio);
 
 // JOSE: seria mejor llamar a esta funcion cargarArreglo y no LeerArreglo
 // SERGIO: Perfecto!!!
@@ -45,6 +46,14 @@ function sumarArreglos(
   }
 }
 
+function productoEscalar(arreglo1: number[], arreglo2: number[]): number {
+  let suma: number = 0;
+  for (let i: number = 0; i < arreglo1.length; i++) {
+    suma += arreglo1[i] * arreglo2[i];
+  }
+  return suma;
+}
+
 function mostrarArreglo(
   arreglo: number[],
   tamanio: number,
@@ -57,19 +66,22 @@ function mostrarArreglo(
   }
 }
 
-cargarArreglo(arreglo1, 6, "Arreglo 1");
+cargarArreglo(arreglo1, tamanio, "Arreglo 1");
 // SERGIO: Cambiado por comentario de JOSE
 //mostrarArreglo(arreglo1, 6, "Arreglo 1");
 console.log(`El Arreglo 1 es: ${arreglo1}`);
-cargarArreglo(arreglo2, 6, "Arreglo 2");
+cargarArreglo(arreglo2, tamanio, "Arreglo 2");
 // SERGIO: Cambiado por comentario de JOSE
 //mostrarArreglo(arreglo2, 6, "Arreglo 2");
 console.log(`El Arreglo 2 es: ${arreglo2}`);
-sumarArreglos(arreglo1, arreglo2, 6);
+sumarArreglos(arreglo1, arreglo2, tamanio);
 // SERGIO: Cambiado por comentario de JOSE
 //mostrarArreglo(sumaArreglo1y2, 6, "arreglo de la suma de los Arreglos 1 y 2");
 console.log(`La Suma de los Arreglos 1 y 2 es: ${sumaArreglo1y2}`);
-
+console.log(
+  "El Producto Escalar de los Arreglos es: " +
+    productoEscalar(arreglo1, arreglo2)
+);
 // JOSE: a veces no es bueno mostrar tanta informacion, console.log arreglo es suficiente y claro
 // SERGIO: Debería reemplasar los mostrarArreglo(...) por console.log y listo
 
