@@ -18,8 +18,9 @@ document.getElementById("app").innerHTML = `
   <p>}</p>
   <p> </p>
   <p>x([5, 8, 9, 6, 4, 5, 8, 3]);</p>
-  <p>RESPUESTA: La función x guarda en t el tamaño del arreglo y en m el mayor valor del arreglo. Luego muestra el valor de m como valor maximo dentro del arreglo.</p>
+  <p>RESPUESTA: La función x guarda en "t" el tamaño del arreglo y en "m" el mayor valor del arreglo. Luego muestra el valor de "m" como valor máximo dentro del arreglo.
 
+  En definitiva la función haya el mayor valor del arreglo.</p>
 `;
 
 function x(entrada: number[]) {

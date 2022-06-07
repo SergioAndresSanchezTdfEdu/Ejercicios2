@@ -27,22 +27,22 @@ function multiplicarEntreNumeros(
 }*/
 
 // RESPUESTA:
-// El comentario esta mal hecho ya que se hace por línes con //
-// o se hace todo el parrafo empezando con /* y terminando al final
-// de todo el comentario con */
-//
-// EL pasar por parametro cantNum, no se entiende, no corresponde con lo comentado
-// en el comentario de la función. Tomo cantNum, como la cantidad de números que debe ingresar
-// el usuario.
-// resultado debería iniciar en 1 ya que es el valor neutro para la multiplicación.
-// El While no cortaría nunca, salvo que cantNum sea 0, no se modifican nunca los valores de i y
-// cantNum dentro del while. Como es una cantidad sabida de iteraciones, lo haría con un for.
-// No se esta realizando la multiplicación de los números ingresados por el usuario que cumplan
-// con estar entre los valores min y max.
-// return debería retornar la variable resultado luego de ser bien realizado el cálculo.
-// agrego la variable ningunValorDentroDelRango inicalizada en true, para evaluar si la persona
-// entro volaros dentro del rango y convertirla en false, de no ser así, se debe retornar el valor 0.
-// de esta manerasi el usario ingresa valores menores a cero o mayores a cero funciona siempre.
+
+// a) El comentario esta mal hecho ya que se hace por líneas con // o se hace todo el párrafo empezando con /* y terminando al final de todo el comentario con */
+
+// b) EL pasar por parámetro cantNum, no se entiende, no corresponde con lo comentado en el comentario de la función. Tomo cantNum, como la cantidad de números que debe ingresar el usuario.
+
+// c) La variable resultado debería iniciarse en 1 ya que es el valor neutro para la multiplicación.
+
+// d) El While no cortaría nunca, salvo que cantNum sea 0, no se modifican nunca los valores de i y cantNum dentro del while. Como es una cantidad sabida de iteraciones, lo haría con un for.
+
+//e ) No se esta realizando la multiplicación de los números ingresados por el usuario que cumplan con estar entre los valores min y max.
+
+//f ) return debería retornar la variable resultado luego de ser bien realizado el cálculo.
+
+// g) Agrego la variable ningunValorDentroDelRango inicializada en true, para evaluar si la persona entro valores dentro del rango y convertirla en false, de no ser así, se debe retornar el valor 0 en caso de que min sea mayor que max y en caso de que el usuario no ingrese ningún valor dentro del rango solicitado. De esta manera, si el usuario ingresa valores menores a cero o mayores a cero funciona siempre.
+
+// La función debería quedar así:
 
 function multiplicarEntreNumerosArreglada(
   min: number,
