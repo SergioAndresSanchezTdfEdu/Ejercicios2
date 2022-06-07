@@ -31,8 +31,12 @@ function buscarMenorNumero(arreglo: number[]): number {
   return menor;
 }
 
-cargarArregloNumeroAzar(arregloNumerico);
-mostrarArreglo(arregloNumerico);
-console.log(
-  "El menor valor del arreglo es: " + buscarMenorNumero(arregloNumerico)
-);
+if (arregloNumerico.length !== 0) {
+  cargarArregloNumeroAzar(arregloNumerico);
+  mostrarArreglo(arregloNumerico);
+  console.log(
+    "El menor valor del arreglo es: " + buscarMenorNumero(arregloNumerico)
+  );
+} else {
+  console.log("La dimensión del arreglo es 0");
+}
