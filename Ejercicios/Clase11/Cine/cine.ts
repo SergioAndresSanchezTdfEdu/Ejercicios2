@@ -33,7 +33,6 @@ function contarButacasDesocupadas(arreglo: boolean[]): number {
   }
   return butacasDesocupadas;
 }
-
 cargarArregloBooleanAzar(butacas);
 console.log(
   "El cine cuenta con " +
@@ -41,3 +40,4 @@ console.log(
     " butacas de las cuales están desocupadas " +
     contarButacasDesocupadas(butacas)
 );
+//esta muy bien tu solucion
