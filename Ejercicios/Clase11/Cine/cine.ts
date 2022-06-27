@@ -7,12 +7,22 @@ let butacas: boolean[] = new Array(tamanio);
 
 // Si el valor entregado por la función Math.random() es < 0.5 retorno el valor false
 // en caso contrario retorna true.
+// JOSE: Solo este comentario, aca:
+//       Boolean(Math.floor(Math.random()*2)) esto queda mejor que con los if else
+/* SERGIO: Mi función
+
 function numAlAzarBoolean(): boolean {
   if (Math.random() < 0.5) {
     return false;
   } else {
     return true;
   }
+}
+*/
+
+// Corregida por lo mensionado por José
+function numAlAzarBoolean(): boolean {
+  return Boolean(Math.floor(Math.random() * 2));
 }
 
 // Cargo el arreglo de tamanio definido por el usuario con valores booleanos entregados al azar
@@ -41,3 +51,4 @@ console.log(
     " butacas de las cuales están desocupadas " +
     contarButacasDesocupadas(butacas)
 );
+// JOSE: esta muy bien tu solucion

@@ -1,3 +1,6 @@
+// JOSE: Corrección
+// Correcto
+
 document.getElementById("app").innerHTML = `
   <h1>Examen - Ejercicio 2</h1>
   <p>Enunciado:</p>

@@ -18,19 +18,31 @@ function multiplicarArreglos(
   arreglo2: number[],
   resultado: number[]
 ) {
-  let butacasDesocupadas: number = 0;
-  for (let i: number = 0; i < arreglo.length; i++) {
-    if (!arreglo[i]) {
-      butacasDesocupadas++;
-    }
+  for (let i: number = 0; i < arreglo1.length; i++) {
+    resultado[i] = arreglo1[i] * arreglo2[i];
   }
-  return butacasDesocupadas;
 }
 
-cargarArregloBooleanAzar(butacas);
-console.log(
-  "El cine cuenta con " +
-    tamanio +
-    " butacas de las cuales están desocupadas " +
-    contarButacasDesocupadas(butacas)
-);
+console.log("v1: " + v1);
+console.log("v2: " + v2);
+console.log("v3: " + v3);
+console.log("v4: " + v4);
+console.log("-----------");
+
+multiplicarArreglos(v1, v2, vResultado);
+
+console.log("v1 * v2");
+console.log("vResultado: " + vResultado);
+console.log("-----------");
+
+multiplicarArreglos(vResultado, v3, vResultado);
+
+console.log("vResultado * v3");
+console.log("vResultado: " + vResultado);
+console.log("-----------");
+
+multiplicarArreglos(vResultado, v4, vResultado);
+
+console.log("vResultado * v4");
+console.log("vResultado: " + vResultado);
+console.log("-----------");

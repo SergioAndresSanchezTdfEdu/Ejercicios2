@@ -1,3 +1,10 @@
+// JOSE: Corrección
+// El ejercicio esta bien, lo rebuscaste demasiado.
+// Hay alguna solución que propusiste que no es del todo acertada,
+// pero como es una solución a algo que no se pide no se tiene en
+// cuenta para la corrección.
+// Para finalizar, tu examen está muy bien!!
+
 document.getElementById("app").innerHTML = `
   <h1>Examen - Ejercicio 3</h1>
   <p>Enunciado:</p>

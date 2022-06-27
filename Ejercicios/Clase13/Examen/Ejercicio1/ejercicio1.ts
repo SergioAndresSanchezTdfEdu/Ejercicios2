@@ -1,3 +1,8 @@
+// JOSE: Correción
+// Ojo con la función random, así como esta no da valores de 0 a 100
+// sino de 0 a 98
+// Bien resuelto
+
 document.getElementById("app").innerHTML = `
   <h1>Examen - Ejercicio 1</h1>
   <p>Enunciado:</p>
@@ -11,7 +16,10 @@ let arregloNumerico: number[] = new Array(tamanio);
 // con numeros al azar de 0 a 100.
 function cargarArregloNumeroAzar(arreglo: number[]) {
   for (let i: number = 0; i < arreglo.length; i++) {
-    arreglo[i] = Math.floor(Math.random() * 99);
+    // SERGIO:
+    // arreglo[i] = Math.floor(Math.random() * 99);
+    // JOSE:
+    arreglo[i] = Math.floor(Math.random() * 101);
   }
 }
 
