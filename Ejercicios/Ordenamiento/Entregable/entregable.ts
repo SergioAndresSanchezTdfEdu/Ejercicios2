@@ -62,6 +62,7 @@ function ordenarBubble(
 ) {
   for (let i: number = 0; i < cantidad - 1; i++) {
     for (let j: number = 0; j < cantidad - i; j++) {
+      
       if (
         arreglo2[j] > arreglo2[j + 1] ||
         (arreglo2[j] === arreglo2[j + 1] && arreglo3[j] > arreglo3[j + 1])
