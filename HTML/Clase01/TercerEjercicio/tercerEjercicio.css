@@ -1,0 +1,25 @@
+p {
+  font-size: 12px;
+  color: cyan;
+  background-color: black;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.color1 {
+  color: blue;
+}
+
+.color2 {
+  color: red;
+}
+
+.colorbackcyan {
+  background-color: cyan;
+}
+
+body {
+  background-image: url("https://cdnnmundo1.img.sputniknews.com/img/07e6/01/15/1120603636_0:661:1080:1269_1920x0_80_0_0_37d6bb7b33b029893b04c25b0abbdf6f.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
